@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+/* custom css added */
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.jost {
+  font-family: "Jost", sans-serif;
+}
+.heading {
+  font-family: "Montserrat", sans-serif;
+  color: #212529;
+}
+.button {
+  color: white;
+  background-color: #214285;
+  padding: 10px 40px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.button:hover {
+  background-color: #214285;
+}
+.text-normal {
+  color: #212529;
+  font-weight: 400;
+}
+.text-medium {
+  color: #212529;
+  font-weight: 500;
+}
+.text-bold {
+  color: #212529;
+  font-weight: 700;
+}
+.text-thin {
+  color: #212529;
+  font-weight: 400;
+}
+.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  transition: 0.3s ease;
+}
+.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: 0.3s ease;
+}
+.overlay-active {
+  opacity: 0.5;
+  visibility: visible;
+  transform: translateX(0);
+  transition: 0.2s ease;
+}
+.overlay-inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: 0.2s ease;
+}
+@keyframes zoomOut {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.zoom-animation {
+  animation: zoomOut 0.3s ease forwards;
+}
